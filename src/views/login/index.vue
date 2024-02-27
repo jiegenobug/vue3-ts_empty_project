@@ -2,14 +2,14 @@
 import router from "@/router";
 import { useUserStore } from "@/stores/user";
 const userStore = useUserStore();
-const Logins = async () => {
-  await userStore.login({ phoneNumber: "15201956179", password: 123456 });
+const Login = async () => {
+  await userStore.login({ phoneNumber: "", password: "" });
   router.push('/')
 };
 </script>
 <template>
   登录页
-  <button @click="Logins">登录</button>
+  <button @click="Login">登录</button>
 </template>
 
 <style scoped lang="less"></style>
